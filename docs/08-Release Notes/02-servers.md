@@ -16,6 +16,34 @@ keywords:
 
 # Server
 
+## 0.10.0
+
+Released: 01/11/2025
+
+OpenUEM console has received three major features: 
+
+- [Authentication with OpenID Connect](/docs/04-Console/01-intro.md#openid-connect) is now available. You can use Authelia, Authentik, Keycloak or Zitadel as identity providers to authenticate users. Thanks to stavrosk, mpweya  and cr1sti for the suggestions to bring it to OpenUEM. 
+- [RustDesk integration](/docs/04-Console/07-computers.md#2123-rustdesk). OpenUEM can use RustDesk to offer remote assistance. OpenUEM instructs the agents to configure RustDesk according to the admin needs. 
+- [Remote Assistance](/docs/04-Console/07-computers.md#2121-vnc) now includes some checks to inform the administrator about the possible options to offer remote assistance and check if requirements are met. 
+
+Other features and fixes: 
+
+- feat: add PDF report for computer inventory 
+- feat: select winget package version for task 
+- feat: add use latest version for winget install task 
+- feat: add nickname support to endpoint 
+- feat: add german translation by @SteveKueng 
+- feat: xlsx report for computer 
+- fix: more icons for supported OSes and vendors 
+- feat: add new tab to show physical disks info 
+- fix: pagination is not shown for users, tenants and sites 
+- fix: dashboard links to antivirus view 
+- feat: add all in one endpoint type 
+- fix: wrong list sites URL caused 404 
+- fix: misplaced number in pie chart title depending on magnitude 
+- feat: reflect changes to windows tasks in console 
+- feat: domain no longer required for site definition 
+
 ## 0.9.0
 
 Released: 16/07/2025

@@ -57,6 +57,10 @@ EOSQL
 
 Here are the possible environment variables that can appear in the .env file.
 
+:::danger
+The DATABASE_URL environment variable contains the Postgres connection URI string. Note that the connection URI needs to be encoded with percent-encoding if it includes symbols with special meaning in any of its parts as mentioned in [Postgres docs](https://www.postgresql.org/docs/17/libpq-connect.html#LIBPQ-CONNSTRING). If you use special characters in your username or password, you may find the [following page](https://www.w3schools.com/tags/ref_urlencode.ASP) of interest to encode these fields in your URI.  
+:::
+
 | Name                    | Description                                                                                                                         | Optional | Example value                                           |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------- |
 | SERVER_NAME             | The name of the server where the console is hosted                                                                                  | no       | server.example.com                                      |

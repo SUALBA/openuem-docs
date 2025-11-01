@@ -16,6 +16,25 @@ keywords:
 
 # Agents
 
+## 0.9.0
+
+Released: 01/11/2025
+
+The agent for Windows has experienced major changes to improve its performance, dropping the usage of Windows DSC files. The agent now controls better if a task has already run, or if a profile hasn’t finished applying all the tasks. Thanks to cr1sti for reporting the issue. 
+
+A nasty bug that affected the Windows agent (getting empty values) has been fixed. Thanks to tarello30 and raito88 in the Discord channel for the help to discover and test the fix. Also, a path has been added to fix macOS agents that could not reconnect to NATS after a timeout. Thanks to wolrah and parkthecar in the Discord channel for the valuable feedback to identify the issue. 
+
+Other features and fixes: 
+
+- feat: get physical disk information
+- fix: some Windows versions are reported as Windows Server and not as Windows clients
+- feat: remove route command to avoid deprecated net-tools
+- feat: VNC support for OpenSUSE Leap and X11. Thanks to hermandos in the Discord channel for reporting it and testing the fix
+- feat: support neon, improve wayland detection with neon. Thanks to carles_gs for reporting it, providing suggestions and testing the fix
+- feat: gnome software updates now detected
+- feat: RustDesk logic to detect and configure the app
+- fix: dnf history time parsing for Fedora agents check for last updates 
+
 ## 0.8.0
 
 Released: 16/07/2025
